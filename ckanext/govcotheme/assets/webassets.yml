@@ -1,0 +1,6 @@
+bundles:
+  govcotheme/main:
+    filters: cssmin
+    output: govcotheme/govcotheme.min.css
+    contents:
+      - css/govcotheme.css
