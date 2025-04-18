@@ -1,17 +1,17 @@
 from setuptools import setup
 
 setup(
-    name='govcotheme',
+    name='ckanext-govcotheme',
     version='0.0.1',
-    description='Tema Govco para CKAN',
-    author='Víctor Ortiz Gándara',
-    install_requires=[],
-    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
-    namespace_packages=['ckanext'],
+    description='Tema personalizado para CKAN',
+    author='Tu Nombre',
+    author_email='tu@email.com',
+    packages=['ckanext.govcotheme'],
     include_package_data=True,
     zip_safe=False,
+    install_requires=[],
     entry_points='''
         [ckan.plugins]
-        govcotheme=ckanext.govcotheme.plugin:GovCoThemePlugin
+        mytheme=ckanext.govcotheme.plugin:GovCoThemePlugin
     ''',
 )
