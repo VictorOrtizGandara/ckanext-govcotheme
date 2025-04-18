@@ -11,6 +11,6 @@ setup(
     zip_safe=False,
     entry_points='''
         [ckan.plugins]
-        govcotheme=govcotheme.plugin:GovCoThemePlugin
+        govcotheme=ckanext.govcotheme.plugin:GovCoThemePlugin
     ''',
 )
