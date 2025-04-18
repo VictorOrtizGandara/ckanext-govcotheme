@@ -1,0 +1,13 @@
+{% ckan_extends %}
+
+{% block header_site_title %}
+    <a href="{{ h.url_for('home.index') }}">
+        <img src="/base/images/ckan-logo.png" alt="Mi CKAN" height="40">
+        <span style="margin-left: 10px;">Mi Portal de Datos 🚀</span>
+    </a>
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    {% asset 'govcotheme/govcotheme.css' %}
+{% endblock %}
