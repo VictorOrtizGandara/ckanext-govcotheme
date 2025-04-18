@@ -1,10 +1,18 @@
-import ckan.plugins as p
+from ckan.common import CKANConfig
+import ckan.plugins as plugins
+import ckan.plugins.toolkit as toolkit
 
-class GovCoThemePlugin(p.SingletonPlugin):
-    p.implements(p.IConfigurer)
 
-    def update_config(self, config):
-        p.toolkit.add_template_directory(config, 'templates')
-        p.toolkit.add_public_directory(config, 'public')
-        p.toolkit.add_resource('assets', 'govcotheme')
+class GovcoThemePlugin(plugins.SingletonPlugin):
+    '''An example theme plugin.
+
+    '''
+    # Declare that this class implements IConfigurer.
+    plugins.implements(plugins.IConfigurer)
+
+    def update_config(self, config: CKANConfig):
+
+        toolkit.add_template_directory(config, 'templates')
+        toolkit.add_public_directory(config, 'public')
+        toolkit.add_resource('assets', 'govcotheme')
 

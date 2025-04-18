@@ -11,6 +11,6 @@ setup(
     install_requires=[],
     entry_points='''
         [ckan.plugins]
-        govcotheme=ckanext.govcotheme.plugin:GovCoThemePlugin
+        govcotheme=ckanext.govcotheme.plugin:GovcoThemePlugin
     ''',
 )
