@@ -1,0 +1,14 @@
+# govcotheme-js:
+#   filter: rjsmin
+#   output: ckanext-govcotheme/%(version)s-govcotheme.js
+#   contents:
+#     - js/govcotheme.js
+#   extra:
+#     preload:
+#       - base/main
+
+# govcotheme-css:
+#   filter: cssrewrite
+#   output: ckanext-govcotheme/%(version)s-govcotheme.css
+#   contents:
+#     - style.css
